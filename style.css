@@ -1,0 +1,119 @@
+/* Custom CSS for Spice Kitchen */
+
+/* --- Fonts & Base Styling --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.page-section {
+    padding: 8rem 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8B0000; /* Dark Red - Indian Food Theme */
+}
+
+.section-subheading {
+    font-style: italic;
+}
+
+/* --- Navigation Bar --- */
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    transition: background-color 0.3s ease;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold */
+}
+
+#mainNav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+}
+
+/* --- Hero Section (Masthead) --- */
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('indian_food_hero.jpg'); /* REPLACE with your image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* Dark overlay for better text readability */
+}
+
+.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.masthead .container {
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+/* --- Custom Button Styling (Themed) --- */
+.btn-primary {
+    background-color: #8B0000; /* Dark Red */
+    border-color: #8B0000;
+}
+
+.btn-primary:hover {
+    background-color: #A52A2A; /* Slightly lighter Red */
+    border-color: #A52A2A;
+}
+
+.btn-warning {
+    background-color: #FFD700; /* Gold */
+    border-color: #FFD700;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #e6c500;
+    border-color: #e6c500;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #f8f9fa;
+}
+
+.btn-social {
+    color: white;
+    background-color: #333;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-social:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+/* --- Card Styling for Menu --- */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
